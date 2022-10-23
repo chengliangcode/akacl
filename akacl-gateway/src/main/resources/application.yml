@@ -1,2 +1,26 @@
 server:
+  # 端口
   port: 9000
+spring:
+  application:
+    # 应用名
+    name: akacl-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 116.205.188.28:8848
+        namespace: cl-namespace
+        group: AKACL_GROUP
+    # 网关
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: akacl-service
+          uri: lb://akacl-service
+          predicates:
+            - Path=/api/service/**
+          filters:
+            - StripPrefix=1

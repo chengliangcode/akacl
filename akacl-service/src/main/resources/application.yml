@@ -1,0 +1,15 @@
+server:
+  # 端口
+  port: 10100
+  servlet:
+    context-path: /service
+spring:
+  application:
+    # 应用名
+    name: akacl-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 116.205.188.28:8848
+        namespace: cl-namespace
+        group: AKACL_GROUP
