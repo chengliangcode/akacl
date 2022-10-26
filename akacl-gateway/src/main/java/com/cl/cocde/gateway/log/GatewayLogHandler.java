@@ -2,6 +2,7 @@ package com.cl.cocde.gateway.log;
 
 import com.alibaba.fastjson.JSON;
 import com.cl.cocde.gateway.util.IpUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.reactivestreams.Publisher;
 import org.springframework.cloud.gateway.route.Route;
 import org.springframework.cloud.gateway.support.ServerWebExchangeUtils;
@@ -30,6 +31,7 @@ import java.util.Objects;
  * @author chengliang
  * @since 2022/10/22 20:01
  */
+@Slf4j
 public class GatewayLogHandler {
 
     public static GatewayLog handle(ServerWebExchange exchange) {

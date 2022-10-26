@@ -18,9 +18,7 @@ public class AkaclGatewayTest {
             System.out.println(s);
             return s;
         });
-
         map.subscribe();
-
     }
 
 }

@@ -1,12 +1,12 @@
 server:
   # 端口
-  port: 12050
+  port: 11000
   servlet:
-    context-path: /service
+    context-path: /auth
 spring:
   application:
     # 应用名
-    name: akacl-service
+    name: akacl-auth
   cloud:
     nacos:
       discovery:

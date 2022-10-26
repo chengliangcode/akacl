@@ -6,16 +6,19 @@
 
     <parent>
         <groupId>com.cl.code</groupId>
-        <artifactId>charlie-parent</artifactId>
+        <artifactId>charlie</artifactId>
         <version>1.0.0</version>
+        <relativePath/>
     </parent>
 
     <artifactId>akacl</artifactId>
     <packaging>pom</packaging>
     <version>${revision}</version>
+
     <modules>
         <module>akacl-gateway</module>
         <module>akacl-service</module>
+        <module>akacl-auth</module>
     </modules>
 
     <properties>

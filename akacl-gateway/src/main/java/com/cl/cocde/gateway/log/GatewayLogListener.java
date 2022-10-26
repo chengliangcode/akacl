@@ -1,5 +1,6 @@
 package com.cl.cocde.gateway.log;
 
+import com.alibaba.fastjson2.JSON;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
@@ -14,7 +15,7 @@ public class GatewayLogListener implements ApplicationListener<GatewayLogEvent> 
 
     @Override
     public void onApplicationEvent(GatewayLogEvent event) {
-        System.out.println(event.getSource());
+        System.out.println(JSON.toJSONString(event.getSource()));
     }
 
 }
