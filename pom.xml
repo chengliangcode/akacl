@@ -19,6 +19,7 @@
         <module>akacl-gateway</module>
         <module>akacl-service</module>
         <module>akacl-auth</module>
+        <module>akacl-common</module>
     </modules>
 
     <properties>

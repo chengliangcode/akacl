@@ -21,6 +21,7 @@ spring:
         - id: akacl-service
           uri: lb://akacl-service
           predicates:
-            - Path=/api/service/**
+            - Path=/api/akacl-service/**
           filters:
             - StripPrefix=1
+            - AddRequestParameter=red, blue
