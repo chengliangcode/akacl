@@ -1,0 +1,20 @@
+server:
+  # 端口
+  port: 12050
+  servlet:
+    context-path: /akacl-system
+spring:
+  application:
+    # 应用名
+    name: akacl-system
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 116.205.188.28:8848
+        namespace: cl-namespace
+        group: AKACL_GROUP
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/akacl?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456

@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.generator.config.OutputFile;
 import com.baomidou.mybatisplus.generator.config.TemplateType;
 import com.baomidou.mybatisplus.generator.config.po.LikeTable;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
-import com.cl.code.common.entity.BaseEntity;
+import com.cl.code.common.datasource.entity.BaseEntity;
 
 import java.util.Collections;
 

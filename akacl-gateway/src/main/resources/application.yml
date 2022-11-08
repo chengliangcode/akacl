@@ -18,10 +18,10 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: akacl-service
-          uri: lb://akacl-service
+        - id: akacl-system
+          uri: lb://akacl-system
           predicates:
-            - Path=/api/akacl-service/**
+            - Path=/api/akacl-system/**
           filters:
             - StripPrefix=1
             - AddRequestParameter=red, blue

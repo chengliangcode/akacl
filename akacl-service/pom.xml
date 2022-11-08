@@ -40,7 +40,13 @@
 
         <dependency>
             <groupId>com.cl.code</groupId>
-            <artifactId>akacl-common</artifactId>
+            <artifactId>akacl-common-core</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cl.code</groupId>
+            <artifactId>akacl-common-datasource</artifactId>
             <version>${revision}</version>
         </dependency>
 

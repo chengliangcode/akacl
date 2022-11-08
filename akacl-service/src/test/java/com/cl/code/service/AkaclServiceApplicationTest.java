@@ -1,6 +1,6 @@
 package com.cl.code.service;
 
-import com.cl.code.common.constant.EnableEnum;
+import com.cl.code.common.core.constant.EnableEnum;
 import com.cl.code.module.system.entity.ClUser;
 import com.cl.code.module.system.service.IClUserService;
 import org.junit.jupiter.api.Test;

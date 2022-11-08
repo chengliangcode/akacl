@@ -2,7 +2,7 @@ package com.cl.code.module.system.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.cl.code.common.entity.BaseEntity;
+import com.cl.code.common.datasource.entity.BaseEntity;
 import lombok.Getter;
 import lombok.Setter;
 

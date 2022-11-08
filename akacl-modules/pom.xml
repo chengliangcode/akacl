@@ -3,28 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
+        <artifactId>akacl</artifactId>
         <groupId>com.cl.code</groupId>
-        <artifactId>charlie</artifactId>
-        <version>1.0.0</version>
-        <relativePath/>
+        <version>${revision}</version>
     </parent>
 
-    <artifactId>akacl</artifactId>
+    <artifactId>akacl-modules</artifactId>
     <packaging>pom</packaging>
-    <version>${revision}</version>
 
     <modules>
-        <module>akacl-gateway</module>
-        <module>akacl-service</module>
-        <module>akacl-auth</module>
-        <module>akacl-common</module>
-        <module>akacl-modules</module>
+        <module>akacl-system</module>
     </modules>
 
-    <properties>
-        <revision>1.0.0</revision>
-    </properties>
 
 </project>
