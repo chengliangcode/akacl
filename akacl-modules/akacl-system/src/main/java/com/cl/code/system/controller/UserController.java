@@ -1,5 +1,6 @@
 package com.cl.code.system.controller;
 
+import com.cl.code.common.core.result.ApiResult;
 import com.cl.code.system.pojo.vo.UserSave;
 import com.cl.code.system.service.UserService;
 import org.springframework.validation.annotation.Validated;
@@ -24,8 +25,10 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/add")
-    public Long userAdd(@Validated @RequestBody UserSave userSave) {
-        return userService.userAdd(userSave);
+    public ApiResult<Long> userAdd(@Validated @RequestBody UserSave userSave) {
+        String a = null;
+        a.toString();
+        return ApiResult.success(userService.userAdd(userSave));
     }
 
     @PostMapping("/edit")

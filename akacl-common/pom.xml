@@ -16,6 +16,7 @@
     <modules>
         <module>akacl-common-core</module>
         <module>akacl-common-datasource</module>
+        <module>akacl-common-web</module>
     </modules>
 
 
