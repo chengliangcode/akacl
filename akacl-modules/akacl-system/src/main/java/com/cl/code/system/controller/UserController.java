@@ -26,8 +26,6 @@ public class UserController {
 
     @PostMapping("/add")
     public ApiResult<Long> userAdd(@Validated @RequestBody UserSave userSave) {
-        String a = null;
-        a.toString();
         return ApiResult.success(userService.userAdd(userSave));
     }
 
