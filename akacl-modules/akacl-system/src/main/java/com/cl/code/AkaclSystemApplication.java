@@ -1,5 +1,7 @@
 package com.cl.code;
 
+import com.cl.code.common.datasource.log.DaoLogImpl;
+import org.apache.ibatis.logging.LogFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

@@ -1,7 +1,7 @@
 package com.cl.code.module.system.mapper;
 
-import com.cl.code.module.system.entity.ClRole;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.cl.code.module.system.entity.ClRole;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
