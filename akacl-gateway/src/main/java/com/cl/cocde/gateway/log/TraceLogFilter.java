@@ -15,6 +15,7 @@ import reactor.core.publisher.Mono;
  */
 @Component
 public class TraceLogFilter implements GlobalFilter, Ordered {
+
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         ServerHttpRequest request = exchange.getRequest();
@@ -24,7 +25,7 @@ public class TraceLogFilter implements GlobalFilter, Ordered {
             httpHeaders.set(LogTraceIdContext.TRACE_ID_KEY, traceId);
         }).build();
         exchange.mutate().request(req);
-        return chain.filter(exchange);
+        return chain.filter(exchange).then(Mono.fromRunnable(LogTraceIdContext::removeTraceId));
     }
 
     @Override
