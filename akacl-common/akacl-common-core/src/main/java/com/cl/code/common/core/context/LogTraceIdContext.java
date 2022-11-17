@@ -1,5 +1,6 @@
 package com.cl.code.common.core.context;
 
+import com.cl.code.common.core.util.IdGeneratorUtil;
 import org.slf4j.MDC;
 
 /**
@@ -21,6 +22,10 @@ public class LogTraceIdContext {
     public static String getTraceId() {
         String traceId = MDC.get(TRACE_ID_KEY);
         return traceId == null ? "" : traceId;
+    }
+
+    public static String generateTraceId() {
+        return IdGeneratorUtil.generateId().toString();
     }
 
     public static void removeTraceId() {

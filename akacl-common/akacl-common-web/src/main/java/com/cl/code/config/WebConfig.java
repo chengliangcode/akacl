@@ -3,7 +3,8 @@ package com.cl.code.config;
 import com.alibaba.fastjson2.JSONWriter;
 import com.alibaba.fastjson2.support.config.FastJsonConfig;
 import com.alibaba.fastjson2.support.spring.http.converter.FastJsonHttpMessageConverter;
-import org.slf4j.MDC;
+import com.cl.code.filter.LogTraceIdRequestLoggingFilter;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -21,6 +22,11 @@ import java.util.List;
 @Configuration
 @EnableWebMvc
 public class WebConfig implements WebMvcConfigurer {
+
+    @Bean
+    public LogTraceIdRequestLoggingFilter traceIdRequestLoggingFilter() {
+        return new LogTraceIdRequestLoggingFilter();
+    }
 
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
